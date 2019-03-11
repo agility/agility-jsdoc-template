@@ -21,7 +21,7 @@ body {
 
 a,
 a:active {
-  color: #0095dd;
+  color: #4600a8;
   text-decoration: none;
 }
 
@@ -263,8 +263,8 @@ nav li {
 }
 
 .type-function {
-  background: #B3E5FC;
-  color: #0288D1;
+  background: #ffcb28;
+  color: #333;
 }
 
 .type-class {
