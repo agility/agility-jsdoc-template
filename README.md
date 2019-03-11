@@ -1,22 +1,31 @@
-# Braintree JSDoc Template
+# Minami
 
-A clean, responsive documentation template with search and navigation highlighting for JSDoc 3. Forked from [github.com/nijikokun/minami](https://github.com/nijikokun/minami).
+A clean, responsive documentation template theme for JSDoc 3.
 
-![Braintree JS Doc Template Screenshot](https://puu.sh/rWvW0/2831fd69d6.png)
+![Minami Screenshot](http://i.imgur.com/rPCIFqT.png)
 
-## Responsive
-
-![Braintree JS Doc Template Screenshot](https://puu.sh/rWvZ6/aee92a4787.png)
 
 ## Uses
 
 - [the Taffy Database library](http://taffydb.com/)
-- [Underscore Template library](http://documentcloud.github.com/underscore/#template)
-- [Algolia DocSearch](https://community.algolia.com/docsearch/)
+- [Underscore Template library](http://underscorejs.org/#template)
+- [Montserrat](https://fonts.google.com/specimen/Montserrat) & Helvetica Neue
+
+
+## Install
+
+```bash
+$ npm install --save-dev minami
+```
+
 
 ## Usage
 
 Clone repository to your designated `jsdoc` template directory, then:
+
+```bash
+$ jsdoc entry-file.js -t path/to/minami
+```
 
 
 ### Node.js Dependency
@@ -33,9 +42,10 @@ In your `.jsdoc.json` file, add a template option.
 
 ```json
 "opts": {
-  "template": "node_modules/jsdoc-template"
+  "template": "node_modules/minami"
 }
 ```
+
 
 ### Example JSDoc Config
 
@@ -54,36 +64,23 @@ In your `.jsdoc.json` file, add a template option.
         "plugins/markdown"
     ],
     "templates": {
-        "referenceTitle": "My SDK Name",
-        "disableSort": false,
-        "collapse": true,
-        "resources": {
-            "google": "https://www.google.com/"
-        }
+        "cleverLinks": false,
+        "monospaceLinks": true,
+        "useLongnameInNav": false,
+        "showInheritedInNav": true
     },
     "opts": {
         "destination": "./docs/",
         "encoding": "utf8",
         "private": true,
         "recurse": true,
-        "template": "./node_modules/jsdoc-template"
+        "template": "./node_modules/minami"
     }
 }
 ```
 
-Note: `referenceTitle` and `disableSort` will affect the output of this theme.
+Specifying a number for useLongnameInNav it will be the max number of path elements to show in nav (starting from Class).
 
-If you would like to enable [Algolia DocSearch](https://community.algolia.com/docsearch/), you can pass a `search` object into the `templates` object.
-
-```json
-"templates": {
-    "search": {
-        "apiKey": "your-api-key",
-        "indexName": "Your index name. Defaults to braintree.",
-        "hitsPerPage": "Number of Results to show. Defaults to 7.",
-    }
-}
-```
 
 ## License
 
