@@ -1,7 +1,7 @@
 {
   "name": "agility-jsdoc-template",
   "version": "1.0.0",
-  "description": "Clean and minimal JSDoc 3 Template / Theme",
+  "description": "Clean and JSDoc 3 Template / Theme forked from the minimal template",
   "main": "publish.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
