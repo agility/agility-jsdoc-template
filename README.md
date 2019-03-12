@@ -1,21 +1,12 @@
-# Minami
+# Agility JsDoc Template
 
 A clean, responsive documentation template theme for JSDoc 3.
-
-![Minami Screenshot](http://i.imgur.com/rPCIFqT.png)
-
-
-## Uses
-
-- [the Taffy Database library](http://taffydb.com/)
-- [Underscore Template library](http://underscorejs.org/#template)
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) & Helvetica Neue
 
 
 ## Install
 
 ```bash
-$ npm install --save-dev minami
+$ npm install --save-dev agility-jsdoc-template
 ```
 
 
@@ -24,7 +15,7 @@ $ npm install --save-dev minami
 Clone repository to your designated `jsdoc` template directory, then:
 
 ```bash
-$ jsdoc entry-file.js -t path/to/minami
+$ jsdoc entry-file.js -t path/to/agility-jsdoc-template
 ```
 
 
@@ -42,7 +33,7 @@ In your `.jsdoc.json` file, add a template option.
 
 ```json
 "opts": {
-  "template": "node_modules/minami"
+  "template": "node_modules/agility-jsdoc-template"
 }
 ```
 
@@ -51,30 +42,32 @@ In your `.jsdoc.json` file, add a template option.
 
 ```json
 {
-    "tags": {
-        "allowUnknownTags": true,
-        "dictionaries": ["jsdoc"]
-    },
     "source": {
-        "include": ["lib", "package.json", "README.md"],
+        "include": ["src", "README.md", "package.json"],
         "includePattern": ".js$",
         "excludePattern": "(node_modules/|docs)"
     },
     "plugins": [
         "plugins/markdown"
     ],
+    "recurse": 10,
     "templates": {
         "cleverLinks": false,
         "monospaceLinks": true,
-        "useLongnameInNav": false,
+        "useLongnameInNav": true,
         "showInheritedInNav": true
     },
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc"]
+    },
+    "source-type": "module",
     "opts": {
         "destination": "./docs/",
         "encoding": "utf8",
-        "private": true,
+        "private": false,
         "recurse": true,
-        "template": "./node_modules/minami"
+        "template": "./node_modules/agility-jsdoc-template"        
     }
 }
 ```
