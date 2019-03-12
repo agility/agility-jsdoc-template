@@ -387,7 +387,7 @@ footer {
   font-size: 12px;
   line-height: 18px;
   display: block;
-  background-color: #fff;
+  /* background-color: #fff; */
   color: #4D4E53;
 }
 
