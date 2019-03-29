@@ -1,3 +1,5 @@
+[![Build Status](https://agility.visualstudio.com/Agility CMS/_apis/build/status/Agility%20JsDoc%20Template?branchName=master)](https://agility.visualstudio.com/Agility CMS/_build/latest?definitionId=56&branchName=master)
+
 # Agility JsDoc Template
 
 A clean, responsive documentation template theme for JSDoc 3. This has been customized for use with Agility.
