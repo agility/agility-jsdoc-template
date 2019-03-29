@@ -1,6 +1,6 @@
 {
   "name": "agility-jsdoc-template",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Clean and JSDoc 3 Template / Theme forked from the minimal template",
   "main": "publish.js",
   "scripts": {
