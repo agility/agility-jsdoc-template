@@ -1,6 +1,8 @@
 # Agility JsDoc Template
 
-A clean, responsive documentation template theme for JSDoc 3.
+A clean, responsive documentation template theme for JSDoc 3. This has been customized for use with Agility.
+
+[Live Demo](https://agilitydocs.netlify.com/agility-content-fetch-js-sdk/)
 
 
 ## Install
